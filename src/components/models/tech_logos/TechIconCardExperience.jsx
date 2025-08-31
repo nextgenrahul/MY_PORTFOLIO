@@ -1,6 +1,6 @@
 import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import * as THREE from "three";
 
 const TechIconCardExperience = ({ model }) => {
@@ -58,4 +58,4 @@ const TechIconCardExperience = ({ model }) => {
   );
 };
 
-export default TechIconCardExperience;
+export default React.memo(TechIconCardExperience);

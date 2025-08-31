@@ -1,7 +1,7 @@
 import { testimonials } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
-
+import React from "react";
 const Testimonials = () => {
   return (
     <section id="testimonials" className="flex-center section-padding">
@@ -31,4 +31,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default React.memo(Testimonials);

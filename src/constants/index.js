@@ -120,7 +120,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python DSA",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -138,7 +138,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git and Github",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,15 +147,15 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+    review: "Rahul brought creativity and technical expertise to the team, significantly improving frontend performance and user experience. His ability to blend modern design with optimized code has been invaluable.",
+    imgPath: "https://images.ctfassets.net/frd5oskxgr96/16e2P31DJ0brzyiwNvC564/1fa51988d47f3572d9efd14f15dc2246/Vercel_logo_PNG_clr.svg",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained responsive UIs using React, Next.js, and TailwindCSS.",
+      "Collaborated with designers to ensure pixel-perfect and user-friendly interfaces.",
+      "Optimized frontend performance for faster load times and SEO improvements."
     ],
   },
   {
@@ -204,62 +204,70 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about Rahul Shakya. He transformed our complex SaaS requirements into a seamless, scalable solution. His problem-solving skills and ability to integrate MERN and LAMP stacks are truly impressive.",
     imgPath: "/images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Rahul Shakya was a fantastic experience. He modernized our platform with React and Next.js, making it user-friendly and lightning-fast. His attention to detail and focus on real-world product scalability are unmatched.",
     imgPath: "/images/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Rahul Shakya was an absolute pleasure. His professionalism, clear communication, and deep knowledge of GenAI and web development stood out from start to finish. If you want to elevate your product and brand, Rahul is the ideal partner.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Rahul Shakya completely revamped our outdated system into a fresh, intuitive web application. He combined backend efficiency with a sleek frontend design, making it both modern and easy to navigate. Outstanding work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Rahul Shakya’s expertise in full-stack development is truly impressive. He built a robust and scalable e-commerce platform for us, and our online sales have grown significantly since the launch. A true professional and problem-solver!",
     imgPath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Rahul Shakya exceeded our expectations. He understood our requirements perfectly and delivered a feature-rich application with seamless API integrations. His skills in both frontend and backend development are top-notch.",
     imgPath: "/images/client6.png",
   },
 ];
 
 const socialImgs = [
   {
+    id: 1,
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/nextgenrahul/"
   },
   {
+    id: 2,
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "https://www.facebook.com/nextgenrahulshakya/about/"
   },
   {
+    id: 3,
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://x.com/nextgenrahul"
   },
   {
+    id: 4,
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/nextgenrahul/"
   },
 ];
 
@@ -271,8 +279,8 @@ export {
   expCards,
   expLogos,
   testimonials,
-  socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,
+  socialImgs,
 };

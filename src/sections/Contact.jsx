@@ -1,9 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
-
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -13,10 +12,10 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = useCallback((e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-  };
+  }, [form]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

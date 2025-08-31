@@ -225,10 +225,14 @@ section {
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {
-        @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+        @apply size-4 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
     }
   }
+ .img-experience {
+  @apply w-auto sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto object-cover rounded-lg;
+}
+
 
   .card-border {
     @apply border border-black-50 bg-black-100;

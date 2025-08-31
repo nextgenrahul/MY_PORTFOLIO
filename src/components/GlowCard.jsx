@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 
 const GlowCard = ({ card, index, children }) => {
   // refs for all the cards
@@ -46,4 +46,4 @@ const GlowCard = ({ card, index, children }) => {
   );
 };
 
-export default GlowCard;
+export default React.memo(GlowCard);
