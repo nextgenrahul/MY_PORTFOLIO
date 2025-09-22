@@ -1,3 +1,6 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const TitleHeader = ({ title, sub }) => {
   return (
     <div className="flex flex-col items-center gap-5">

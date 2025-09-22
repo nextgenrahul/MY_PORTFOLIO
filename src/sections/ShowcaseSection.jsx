@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,9 +51,11 @@ const AppShowcase = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
-            <Link to="/" className="image-wrapper">
-              <img src="/images/sss.png" alt="Ryde App Interface" />
-            </Link>
+            <div  className="image-wrapper">
+              <img effect="blur"
+                src="/images/sss.png"
+                alt="Ryde App Interface" />
+            </div>
             <div className="text-content">
               <h2>
                 Shop Smart with a Powerful, User-Friendly E-Commerce App
@@ -82,7 +86,7 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
+                <img effect="blur"
                   src="/images/lms.jpeg"
                   alt="Library Management Platform"
                 />
@@ -92,7 +96,7 @@ const AppShowcase = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img effect="blur" src="/images/project3.png" alt="YC Directory App" />
               </div>
               <h2>YC Directory - A Startup Showcase App</h2>
             </div>

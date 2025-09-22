@@ -2,6 +2,8 @@ import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useEffect } from "react";
 import * as THREE from "three";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const TechIconCardExperience = ({ model }) => {
   const scene = useGLTF(model.modelPath);

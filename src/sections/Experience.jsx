@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,7 +33,7 @@ const Experience = () => {
           // The card is the trigger element
           trigger: card,
           // Trigger the animation when the card is 80% down the screen
-          start: "top 80%",
+          start: "top 90%",
         },
       });
     });
@@ -106,7 +108,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
                     <div>
-                      <img className="img-experience" src={card.imgPath} alt="exp-img" />
+                       {/* <LazyLoadImage  effect="blur" className="LazyLoadImage-experience" src={card.LazyLoadImagePath} alt="exp-LazyLoadImage" /> */}
                     </div>
                   </GlowCard>
                 </div>
@@ -118,8 +120,7 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-
-                        <img src={card.logoPath} alt="logo" className=" rounded-full" />
+                         <img effect="blur" src={card.logoPath} alt="logo" className="rounded-full" />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

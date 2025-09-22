@@ -1,3 +1,7 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
+
 const ExpContent = ({ expContent }) => {
   return (
     <div className="card-border rounded-xl p-10">

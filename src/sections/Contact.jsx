@@ -1,5 +1,7 @@
 import { useRef, useState, useCallback } from "react";
 import TitleHeader from "../components/TitleHeader";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -116,7 +118,7 @@ const Contact = () => {
                     {loading ? "Sending..." : "Send Message"}
                   </p>
                   <div className="arrow-wrapper">
-                    <img src="/images/arrow-down.svg" alt="arrow" />
+                     <LazyLoadImage  effect="blur" src="/images/arrow-down.svg" alt="arrow" />
                   </div>
                 </div>
               </button>

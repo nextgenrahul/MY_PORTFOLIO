@@ -3,6 +3,8 @@
  * When clicked, it scrolls smoothly to the section with ID "counter",
  * with a small offset from the top for better visual placement.
  */
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Button = ({ text, className, id }) => {
   return (
@@ -31,7 +33,7 @@ const Button = ({ text, className, id }) => {
         <div className="bg-circle" />
         <p className="text">{text}</p>
         <div className="arrow-wrapper">
-          <img src="/images/arrow-down.svg" alt="arrow" />
+           <LazyLoadImage  effect="blur" src="/images/arrow-down.svg" alt="arrow" />
         </div>
       </div>
     </a>
@@ -61,7 +63,7 @@ export const Anchor = ({ text, className, id, onClick }) => {
         <div className="bg-circle" />
         <p className="text">{text}</p>
         <div className="arrow-wrapper">
-          <img src="/images/arrow-down.svg" alt="arrow" />
+           <LazyLoadImage  effect="blur" src="/images/arrow-down.svg" alt="arrow" />
         </div>
       </div>
     </a>

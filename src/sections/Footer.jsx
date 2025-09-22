@@ -1,4 +1,6 @@
-import { socialImgs } from "../constants";
+import { socialLazyLoadImages } from "../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Footer = () => {
   return (
@@ -8,15 +10,15 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className="socials">
-          {socialImgs.map((socialImg) => (
+          {socialLazyLoadImages.map((socialLazyLoadImage) => (
             <a
-              key={socialImg.id}
-              href={socialImg.link} 
+              key={socialLazyLoadImage.id}
+              href={socialLazyLoadImage.link} 
               target="_blank"       
               rel="noopener noreferrer"
               className="icon"
             >
-              <img src={socialImg.imgPath} alt="social icon" />
+               <LazyLoadImage  effect="blur" src={socialLazyLoadImage.LazyLoadImagePath} alt="social icon" />
             </a>
           ))}
         </div>

@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const GlowCard = ({ card, index, children }) => {
   // refs for all the cards
@@ -35,7 +37,7 @@ const GlowCard = ({ card, index, children }) => {
       <div className="glow"></div>
       <div className="flex items-center gap-1 mb-5">
         {Array.from({ length: 5 }, (_, i) => (
-          <img key={i} src="/images/star.png" alt="star" className="size-5" />
+           <LazyLoadImage  effect="blur" key={i} src="/images/star.png" alt="star" className="size-5" />
         ))}
       </div>
       <div className="mb-5">

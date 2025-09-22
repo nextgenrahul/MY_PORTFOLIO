@@ -1,9 +1,11 @@
 import { logoIconsList } from "../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const LogoIcon = ({ icon }) => {
   return (
     <div className="flex-none flex-center marquee-item">
-      <img src={icon.imgPath} alt={icon.name} />
+       <LazyLoadImage  effect="blur" src={icon.LazyLoadImagePath} alt={icon.name} />
     </div>
   );
 };

@@ -4,7 +4,8 @@ import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button, { Anchor } from "../components/Button";
 import { words, resume, me } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   useGSAP(() => {
@@ -19,7 +20,7 @@ const Hero = () => {
     <section id="hero" className="relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+         <LazyLoadImage  effect="blur" src="/images/bg.png" alt="" />
       </div>
 
       <div className="hero-layout flex flex-col md:flex-row items-center justify-between md:px-20 px-5">
@@ -35,8 +36,8 @@ const Hero = () => {
                       key={index}
                       className="flex items-center md:gap-3 gap-1 pb-2"
                     >
-                      <img
-                        src={word.imgPath}
+                       <LazyLoadImage  effect="blur"
+                        src={word.LazyLoadImagePath}
                         alt="person"
                         className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-none bg-transparent"
                       />
@@ -64,26 +65,20 @@ const Hero = () => {
             <Anchor
               text="Download Resume"
               className="md:w-80 md:h-16 w-full h-12"
-              onClick={() => window.open(resume.imgPath, "_blank")}
+              onClick={() => window.open(resume.LazyLoadImagePath, "_blank")}
             />
           </div>
         </header>
 
         {/* RIGHT: Hero Image */}
         <div className="md:w-1/2 w-full flex justify-end items-center mr-20">
-          <img
-            src={me.imgPath}
+           <LazyLoadImage  effect="blur"
+            src={me.LazyLoadImagePath}
             alt="Rahul Shakya"
             className="hidden lg:block w-48 h-48 lg:w-190 lg:h-194 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
           />
         </div>
 
-        {/* Optional 3D Model */}
-        <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
-          </div>
-        </figure>
       </div>
 
       <AnimatedCounter />

@@ -18,21 +18,21 @@ const navLinks = [
 ];
 
 const resume = {
-  imgPath: "/images/Rahul.pdf"
+  LazyLoadImagePath: "/images/Rahul.pdf"
 }
 const myImage = {
-  imgPath: "/images/myimage.jpeg"
+  LazyLoadImagePath: "/images/myimage.jpeg"
 }
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", LazyLoadImagePath: "/images/ideas.svg" },
+  { text: "Concepts", LazyLoadImagePath: "/images/concepts.svg" },
+  { text: "Designs", LazyLoadImagePath: "/images/designs.svg" },
+  { text: "Code", LazyLoadImagePath: "/images/code.svg" },
+  { text: "Ideas", LazyLoadImagePath: "/images/ideas.svg" },
+  { text: "Concepts", LazyLoadImagePath: "/images/concepts.svg" },
+  { text: "Designs", LazyLoadImagePath: "/images/designs.svg" },
+  { text: "Code", LazyLoadImagePath: "/images/code.svg" },
 ];
 
 const counterItems = [
@@ -44,78 +44,78 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    LazyLoadImagePath: "/images/logos/company-logo-1.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    LazyLoadImagePath: "/images/logos/company-logo-2.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    LazyLoadImagePath: "/images/logos/company-logo-3.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    LazyLoadImagePath: "/images/logos/company-logo-4.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    LazyLoadImagePath: "/images/logos/company-logo-5.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    LazyLoadImagePath: "/images/logos/company-logo-6.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    LazyLoadImagePath: "/images/logos/company-logo-7.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    LazyLoadImagePath: "/images/logos/company-logo-8.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    LazyLoadImagePath: "/images/logos/company-logo-9.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    LazyLoadImagePath: "/images/logos/company-logo-10.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    LazyLoadImagePath: "/images/logos/company-logo-11.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    LazyLoadImagePath: "/images/seo.png",
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    LazyLoadImagePath: "/images/chat.png",
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    LazyLoadImagePath: "/images/time.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
 
-const techStackImgs = [
+const techStackLazyLoadImages = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    LazyLoadImagePath: "/images/logos/react.png",
   },
   {
     name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    LazyLoadImagePath: "/images/logos/python.svg",
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    LazyLoadImagePath: "/images/logos/node.png",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    LazyLoadImagePath: "/images/logos/three.png",
   },
   {
     name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    LazyLoadImagePath: "/images/logos/git.svg",
   },
 ];
 
@@ -153,33 +153,33 @@ const techStackImgs = [
 // ];
 
 const techStack = [
-  { name: "HTML", title: "HTML is the foundation of web pages", imgPath: "images/html-icon.svg" },
-  { name: "CSS", title: "CSS is used for styling web pages", imgPath: "images/css-icon.svg" },
-  { name: "JavaScript", title: "JavaScript makes websites interactive and dynamic", imgPath: "images/jsicon.svg" },
-  { name: "React", title: "React is a popular frontend library", imgPath: "images/react-js-icon.svg" },
-  { name: "Node.js", title: "Node.js allows building scalable backend applications", imgPath: "images/node-js-icon.svg" },
-  { name: "Python", title: "Python is powerful for algorithms and DSA", imgPath: "images/python-icon.svg" },
-  { name: "Git & GitHub", title: "Git and GitHub help version control efficiently", imgPath: "images/git-icon.svg" },
-  { name: "Next Js", title: "Next.js provides server side rendering for React", imgPath: "images/nextjs-icon.svg" },
-  { name: "MySQL", title: "MySQL is relational database for storing data", imgPath: "images/mysql-icon.svg" },
-  { name: "MongoDB", title: "MongoDB is NoSQL database for flexible storage", imgPath: "images/mongodb-icon.svg" },
-  { name: "Postgres", title: "PostgreSQL is advanced open source relational database", imgPath: "images/postgresql-icon.svg" },
-  { name: "Tailwind CSS", title: "Tailwind CSS is utility-first styling framework", imgPath: "images/tailwind-css-icon.svg" },
-  { name: "Zod", title: "Zod validates data schemas efficiently in projects", imgPath: "images/zod.svg" },
-  { name: "Redux Toolkit", title: "Redux Toolkit simplifies global state management in React", imgPath: "images/redux-icon.svg" },
-  { name: "Docker", title: "Docker containerizes applications for easier deployment", imgPath: "images/docker-icon.svg" },
-  { name: "Express", title: "Express framework is lightweight backend for Node.js", imgPath: "images/express-js-icon.svg" },
-  { name: "Koa", title: "Koa is modern Node.js backend framework alternative", imgPath: "images/koa.svg" },
-  { name: "Hono", title: "Hono is fast backend framework for developers", imgPath: "images/hono.svg" },
-  { name: "Bun", title: "Bun is a fast runtime like Node.js", imgPath: "images/Bun.svg" },
-  { name: "RabbitMQ", title: "RabbitMQ is a message broker for apps", imgPath: "images/rabbit.svg" }, // new added
+  { name: "HTML", title: "HTML is the foundation of web pages", LazyLoadImagePath: "images/html-icon.svg" },
+  { name: "CSS", title: "CSS is used for styling web pages", LazyLoadImagePath: "images/css-icon.svg" },
+  { name: "JavaScript", title: "JavaScript makes websites interactive and dynamic", LazyLoadImagePath: "images/jsicon.svg" },
+  { name: "React", title: "React is a popular frontend library", LazyLoadImagePath: "images/react-js-icon.svg" },
+  { name: "Node.js", title: "Node.js allows building scalable backend applications", LazyLoadImagePath: "images/node-js-icon.svg" },
+  { name: "Python", title: "Python is powerful for algorithms and DSA", LazyLoadImagePath: "images/python-icon.svg" },
+  { name: "Git & GitHub", title: "Git and GitHub help version control efficiently", LazyLoadImagePath: "images/git-icon.svg" },
+  { name: "Next Js", title: "Next.js provides server side rendering for React", LazyLoadImagePath: "images/nextjs-icon.svg" },
+  { name: "MySQL", title: "MySQL is relational database for storing data", LazyLoadImagePath: "images/mysql-icon.svg" },
+  { name: "MongoDB", title: "MongoDB is NoSQL database for flexible storage", LazyLoadImagePath: "images/mongodb-icon.svg" },
+  { name: "Postgres", title: "PostgreSQL is advanced open source relational database", LazyLoadImagePath: "images/postgresql-icon.svg" },
+  { name: "Tailwind CSS", title: "Tailwind CSS is utility-first styling framework", LazyLoadImagePath: "images/tailwind-css-icon.svg" },
+  { name: "Zod", title: "Zod validates data schemas efficiently in projects", LazyLoadImagePath: "images/zod.svg" },
+  { name: "Redux Toolkit", title: "Redux Toolkit simplifies global state management in React", LazyLoadImagePath: "images/redux-icon.svg" },
+  { name: "Docker", title: "Docker containerizes applications for easier deployment", LazyLoadImagePath: "images/docker-icon.svg" },
+  { name: "Express", title: "Express framework is lightweight backend for Node.js", LazyLoadImagePath: "images/express-js-icon.svg" },
+  { name: "Koa", title: "Koa is modern Node.js backend framework alternative", LazyLoadImagePath: "images/koa.svg" },
+  { name: "Hono", title: "Hono is fast backend framework for developers", LazyLoadImagePath: "images/hono.svg" },
+  { name: "Bun", title: "Bun is a fast runtime like Node.js", LazyLoadImagePath: "images/Bun.svg" },
+  { name: "RabbitMQ", title: "RabbitMQ is a message broker for apps", LazyLoadImagePath: "images/rabbit.svg" }, // new added
 ];
 
 
 const expCards = [
   {
     review: "Rahul Shakya delivered high-quality, scalable web applications using the MERN stack. He consistently improved frontend performance and implemented robust backend solutions for real-world projects.",
-    imgPath: "/images/mern.png", // Replace with relevant logo/image
+    LazyLoadImagePath: "/images/jsicon.svg", // Replace with relevant logo/image
     logoPath: "/images/jsicon.svg",
     title: "Full Stack Developer (MERN)",
     date: "January 2023 - Present",
@@ -191,7 +191,7 @@ const expCards = [
   },
   {
     review: "Rahul Shakya applied backend technologies and database management to create secure, reliable, and performant applications. His expertise in PHP, MySQL, and Node.js ensures robust server-side solutions.",
-    imgPath: "/images/backend.png", // Replace with backend logo/image
+    LazyLoadImagePath: "/images/node-js-icon.svg", // Replace with backend logo/image
     logoPath: "/images/node-js-icon.svg",
     title: "Backend Developer (Node.js & PHP)",
     date: "June 2021 - December 2022",
@@ -203,8 +203,8 @@ const expCards = [
   },
   {
     review: "Rahul Shakya implemented modern DevOps practices, including CI/CD pipelines, deployment automation, and cloud hosting strategies, ensuring seamless project delivery and high availability.",
-    imgPath: "/images/devops.png", // Replace with DevOps logo/image
-    logoPath: "/images/logo3.png",
+    LazyLoadImagePath: "/images/docker-icon.svg", // Replace with DevOps logo/image
+    logoPath: "/images/docker-icon.svg",
     title: "DevOps & Deployment",
     date: "March 2020 - May 2021",
     responsibilities: [
@@ -219,15 +219,15 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: "/images/logo1.png",
+    LazyLoadImagePath: "/images/logo1.png",
   },
   {
     name: "logo2",
-    imgPath: "/images/logo2.png",
+    LazyLoadImagePath: "/images/logo2.png",
   },
   {
     name: "logo3",
-    imgPath: "/images/logo3.png",
+    LazyLoadImagePath: "/images/logo3.png",
   },
 ];
 
@@ -237,83 +237,83 @@ const testimonials = [
     mentions: "@estherhoward",
     review:
       "I can’t say enough good things about Rahul Shakya. He transformed our complex SaaS requirements into a seamless, scalable solution. His problem-solving skills and ability to integrate MERN and LAMP stacks are truly impressive.",
-    imgPath: "/images/client1.png",
+    LazyLoadImagePath: "/images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
       "Working with Rahul Shakya was a fantastic experience. He modernized our platform with React and Next.js, making it user-friendly and lightning-fast. His attention to detail and focus on real-world product scalability are unmatched.",
-    imgPath: "/images/client3.png",
+    LazyLoadImagePath: "/images/client3.png",
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
       "Collaborating with Rahul Shakya was an absolute pleasure. His professionalism, clear communication, and deep knowledge of GenAI and web development stood out from start to finish. If you want to elevate your product and brand, Rahul is the ideal partner.",
-    imgPath: "/images/client2.png",
+    LazyLoadImagePath: "/images/client2.png",
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
       "Rahul Shakya completely revamped our outdated system into a fresh, intuitive web application. He combined backend efficiency with a sleek frontend design, making it both modern and easy to navigate. Outstanding work overall.",
-    imgPath: "/images/client5.png",
+    LazyLoadImagePath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
       "Rahul Shakya’s expertise in full-stack development is truly impressive. He built a robust and scalable e-commerce platform for us, and our online sales have grown significantly since the launch. A true professional and problem-solver!",
-    imgPath: "/images/client4.png",
+    LazyLoadImagePath: "/images/client4.png",
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
       "Rahul Shakya exceeded our expectations. He understood our requirements perfectly and delivered a feature-rich application with seamless API integrations. His skills in both frontend and backend development are top-notch.",
-    imgPath: "/images/client6.png",
+    LazyLoadImagePath: "/images/client6.png",
   },
 ];
 const eccomerce = {
   name: "E-Commerce Platform",
   description:
     "A full-featured e-commerce platform built with the MERN stack, featuring user authentication, shopping cart.",
-  imgPath: "/images/sss.png",
+  LazyLoadImagePath: "/images/sss.png",
   techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
 }
 
-const socialImgs = [
+const socialLazyLoadImages = [
   {
     id: 1,
     name: "insta",
-    imgPath: "/images/insta.png",
+    LazyLoadImagePath: "/images/insta.png",
     link: "https://www.instagram.com/nextgenrahul/"
   },
   {
     id: 2,
     name: "fb",
-    imgPath: "/images/fb.png",
+    LazyLoadImagePath: "/images/fb.png",
     link: "https://www.facebook.com/nextgenrahulshakya/about/"
   },
   {
     id: 3,
     name: "x",
-    imgPath: "/images/x.png",
+    LazyLoadImagePath: "/images/x.png",
     link: "https://x.com/nextgenrahul"
   },
   {
     id: 4,
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    LazyLoadImagePath: "/images/linkedin.png",
     link: "https://www.linkedin.com/in/nextgenrahul/"
   },
 ];
 const me = {
-  imgPath: "/images/me.png"
+  LazyLoadImagePath: "/images/me.png"
 }
 const lms = {
-  imgPath: "/images/lms.jpeg"
+  LazyLoadImagePath: "/images/lms.jpeg"
 }
 export {
   lms,
@@ -328,8 +328,8 @@ export {
   expLogos,
   testimonials,
   techStack,
-  techStackImgs,
+  techStackLazyLoadImages,
   navLinks,
-  socialImgs,
+  socialLazyLoadImages,
   resume
 };

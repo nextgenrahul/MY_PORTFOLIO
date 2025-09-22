@@ -1,14 +1,14 @@
 <div align="center">
   <br />
     <a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank">
-      <img src="public/images/readme.png" alt="Project Banner">
+      <LazyLoadImage src="public/images/readme.png" alt="Project Banner">
     </a>
   <br />
 
   <div>
-    <img src="https://img.shields.io/badge/-Three.js-black?style=for-the-badge&logo=three.js&logoColor=white" />
-    <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <LazyLoadImage src="https://LazyLoadImage.shields.io/badge/-Three.js-black?style=for-the-badge&logo=three.js&logoColor=white" />
+    <LazyLoadImage src="https://LazyLoadImage.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
+    <LazyLoadImage src="https://LazyLoadImage.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   </div>
 
   <h3 align="center">Interactive 3D Portfolio Website</h3>
@@ -33,7 +33,7 @@ This repository contains the code corresponding to an in-depth tutorial availabl
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
-<a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+<a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank"><LazyLoadImage src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -41,7 +41,7 @@ The 3D Portfolio project is a highly engaging personal website that features ani
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><LazyLoadImage src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -126,7 +126,7 @@ Open [http://localhost:5173](http://localhost:5173/) in your browser to view the
 Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/pfolio25-kit)**.
 
 <a href="https://jsm.dev/pfolio25-kit" target="_blank">
-  <img src="public/images/readme-video-kit.png" alt="Video Kit Banner">
+  <LazyLoadImage src="public/images/readme-video-kit.png" alt="Video Kit Banner">
 </a>
 
 
@@ -138,5 +138,5 @@ Enjoyed creating this project? Dive deeper into our PRO courses for a richer lea
 detailed explanations, cool features, and exercises to boost your skills. Give it a go!
 
 <a href="https://beta.jsmastery.pro/" target="_blank">
-  <img src="public/images/readme-bottom.png" alt="Project Banner">
+  <LazyLoadImage src="public/images/readme-bottom.png" alt="Project Banner">
 </a>
