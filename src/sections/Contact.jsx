@@ -1,6 +1,4 @@
 import { useRef, useState, useCallback } from "react";
-import emailjs from "@emailjs/browser";
-
 import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
@@ -22,18 +20,24 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      );
+      const response = await fetch("http://localhost:5000/submit-contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
-      setForm({ name: "", email: "", message: "" });
-      alert("Message sent successfully!"); // optional feedback
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setForm({ name: "", email: "", message: "" });
+        alert("Message saved to Google Sheet successfully!");
+      } else {
+        console.error(result.message);
+        alert("Failed to save message.");
+      }
     } catch (error) {
-      console.error("EmailJS Error:", error);
-      alert("Failed to send message. Please try again."); // optional feedback
+      console.error("Google Sheets Error:", error);
+      alert("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -49,8 +53,18 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="mt-16 flex justify-center">
-          <div className="w-full card-border rounded-xl p-10">
+
+        <div className="mt-16 flex justify-center w-full">
+          <div className="w-full card-border rounded-xl p-10 relative">
+            
+            {/* Loading Bar with Text */}
+            {loading && (
+              <div className="absolute top-0 left-0 w-full flex items-center justify-center flex-col">
+                <div className="w-full h-1 bg-blue-500 animate-pulse" />
+                <p className="text-sm text-blue-500 mt-1 font-medium">Loading...</p>
+              </div>
+            )}
+
             <form
               ref={formRef}
               onSubmit={handleSubmit}
