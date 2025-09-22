@@ -50,7 +50,7 @@ const Experience = () => {
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
-        end: "70% center",
+        end: "30% center",
         // Update the animation as the user scrolls
         onUpdate: (self) => {
           // Scale the timeline height as the user scrolls
@@ -106,7 +106,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
                     <div>
-                      <img className="img-experience" src={card.imgPath} alt="exp-img" />
+                      {/* <img className="img-experience" src={card.imgPath} alt="exp-img" /> */}
                     </div>
                   </GlowCard>
                 </div>

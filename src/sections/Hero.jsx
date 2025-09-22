@@ -2,8 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import AnimatedCounter from "../components/AnimatedCounter";
-import Button from "../components/Button";
-import { words } from "../constants";
+import Button, { Anchor } from "../components/Button";
+import { words, resume, me } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
@@ -17,53 +17,68 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden">
+      {/* Background Image */}
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" />
       </div>
 
-      <div className="hero-layout">
+      <div className="hero-layout flex flex-col md:flex-row items-center justify-between md:px-20 px-5">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
-            <div className="hero-text">
-              <h1>
-                Shaping
-                <span className="slide">
-                  <span className="wrapper">
-                    {words.map((word, index) => (
-                      <span
-                        key={index}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
-                      >
-                        <img
-                          src={word.imgPath}
-                          alt="person"
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                        />
-                        <span>{word.text}</span>
-                      </span>
-                    ))}
-                  </span>
+        <header className="flex flex-col justify-center md:w-1/2 w-full gap-7">
+          <div className="hero-text">
+            <h1>
+              Shaping
+              <span className="slide">
+                <span className="wrapper">
+                  {words.map((word, index) => (
+                    <span
+                      key={index}
+                      className="flex items-center md:gap-3 gap-1 pb-2"
+                    >
+                      <img
+                        src={word.imgPath}
+                        alt="person"
+                        className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-none bg-transparent"
+                      />
+                      <span>{word.text}</span>
+                    </span>
+                  ))}
                 </span>
-              </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
-            </div>
+              </span>
+            </h1>
+            <h1>into Real Projects</h1>
+            <h1>that Deliver Results</h1>
+          </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Rahul shakya, a developer based in Croatia with a passion for
-              code.
-            </p>
+          <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+            Hi, I’m Rahul Shakya, Full-stack developer passionate about innovative solutions.
+          </p>
 
+          {/* Buttons side by side */}
+          <div className="flex flex-col md:flex-row gap-5 w-full">
             <Button
               text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+              className="md:w-80 md:h-16 w-full h-12"
               id="counter"
+            />
+            <Anchor
+              text="Download Resume"
+              className="md:w-80 md:h-16 w-full h-12"
+              onClick={() => window.open(resume.imgPath, "_blank")}
             />
           </div>
         </header>
 
-        {/* RIGHT: 3D Model or Visual */}
+        {/* RIGHT: Hero Image */}
+        <div className="md:w-1/2 w-full flex justify-end items-center mr-20">
+          <img
+            src={me.imgPath}
+            alt="Rahul Shakya"
+            className="hidden lg:block w-48 h-48 lg:w-190 lg:h-194 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
+          />
+        </div>
+
+        {/* Optional 3D Model */}
         <figure>
           <div className="hero-3d-layout">
             <HeroExperience />

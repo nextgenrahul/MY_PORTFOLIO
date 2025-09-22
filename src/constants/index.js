@@ -17,6 +17,13 @@ const navLinks = [
   },
 ];
 
+const resume = {
+  imgPath: "/images/Rahul.pdf"
+}
+const myImage = {
+  imgPath: "/images/myimage.jpeg"
+}
+
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -112,77 +119,102 @@ const techStackImgs = [
   },
 ];
 
-const techStackIcons = [
-  {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python DSA",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Git and Github",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
+// const techStackIcons = [
+//   {
+//     name: "React Developer",
+//     modelPath: "/models/react_logo-transformed.glb",
+//     scale: 1,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Python DSA",
+//     modelPath: "/models/python-transformed.glb",
+//     scale: 0.8,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Backend Developer",
+//     modelPath: "/models/node-transformed.glb",
+//     scale: 5,
+//     rotation: [0, -Math.PI / 2, 0],
+//   },
+//   {
+//     name: "Interactive Developer",
+//     modelPath: "/models/three.js-transformed.glb",
+//     scale: 0.05,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Git and Github",
+//     modelPath: "/models/git-svg-transformed.glb",
+//     scale: 0.05,
+//     rotation: [0, -Math.PI / 4, 0],
+//   },
+// ];
+
+const techStack = [
+  { name: "HTML", title: "HTML is the foundation of web pages", imgPath: "images/html-icon.svg" },
+  { name: "CSS", title: "CSS is used for styling web pages", imgPath: "images/css-icon.svg" },
+  { name: "JavaScript", title: "JavaScript makes websites interactive and dynamic", imgPath: "images/jsicon.svg" },
+  { name: "React", title: "React is a popular frontend library", imgPath: "images/react-js-icon.svg" },
+  { name: "Node.js", title: "Node.js allows building scalable backend applications", imgPath: "images/node-js-icon.svg" },
+  { name: "Python", title: "Python is powerful for algorithms and DSA", imgPath: "images/python-icon.svg" },
+  { name: "Git & GitHub", title: "Git and GitHub help version control efficiently", imgPath: "images/git-icon.svg" },
+  { name: "Next Js", title: "Next.js provides server side rendering for React", imgPath: "images/nextjs-icon.svg" },
+  { name: "MySQL", title: "MySQL is relational database for storing data", imgPath: "images/mysql-icon.svg" },
+  { name: "MongoDB", title: "MongoDB is NoSQL database for flexible storage", imgPath: "images/mongodb-icon.svg" },
+  { name: "Postgres", title: "PostgreSQL is advanced open source relational database", imgPath: "images/postgresql-icon.svg" },
+  { name: "Tailwind CSS", title: "Tailwind CSS is utility-first styling framework", imgPath: "images/tailwind-css-icon.svg" },
+  { name: "Zod", title: "Zod validates data schemas efficiently in projects", imgPath: "images/zod.svg" },
+  { name: "Redux Toolkit", title: "Redux Toolkit simplifies global state management in React", imgPath: "images/redux-icon.svg" },
+  { name: "Docker", title: "Docker containerizes applications for easier deployment", imgPath: "images/docker-icon.svg" },
+  { name: "Express", title: "Express framework is lightweight backend for Node.js", imgPath: "images/express-js-icon.svg" },
+  { name: "Koa", title: "Koa is modern Node.js backend framework alternative", imgPath: "images/koa.svg" },
+  { name: "Hono", title: "Hono is fast backend framework for developers", imgPath: "images/hono.svg" },
+  { name: "Bun", title: "Bun is a fast runtime like Node.js", imgPath: "images/Bun.svg" },
+  { name: "RabbitMQ", title: "RabbitMQ is a message broker for apps", imgPath: "images/rabbit.svg" }, // new added
 ];
+
 
 const expCards = [
   {
-    review: "Rahul brought creativity and technical expertise to the team, significantly improving frontend performance and user experience. His ability to blend modern design with optimized code has been invaluable.",
-    imgPath: "https://images.ctfassets.net/frd5oskxgr96/16e2P31DJ0brzyiwNvC564/1fa51988d47f3572d9efd14f15dc2246/Vercel_logo_PNG_clr.svg",
+    review: "Rahul Shakya delivered high-quality, scalable web applications using the MERN stack. He consistently improved frontend performance and implemented robust backend solutions for real-world projects.",
+    imgPath: "/images/mern.png", // Replace with relevant logo/image
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
+    title: "Full Stack Developer (MERN)",
     date: "January 2023 - Present",
     responsibilities: [
-      "Developed and maintained responsive UIs using React, Next.js, and TailwindCSS.",
-      "Collaborated with designers to ensure pixel-perfect and user-friendly interfaces.",
-      "Optimized frontend performance for faster load times and SEO improvements."
+      "Built full-stack applications with MongoDB, Express, React, and Node.js.",
+      "Implemented RESTful APIs and integrated third-party services efficiently.",
+      "Optimized frontend and backend performance for faster load times and scalability.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    review: "Rahul Shakya applied backend technologies and database management to create secure, reliable, and performant applications. His expertise in PHP, MySQL, and Node.js ensures robust server-side solutions.",
+    imgPath: "/images/backend.png", // Replace with backend logo/image
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Backend Developer (Node.js & PHP)",
+    date: "June 2021 - December 2022",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed APIs and backend services using Node.js, Express, and PHP.",
+      "Managed relational databases with MySQL and optimized queries.",
+      "Ensured security, error handling, and maintainability in all backend systems.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    review: "Rahul Shakya implemented modern DevOps practices, including CI/CD pipelines, deployment automation, and cloud hosting strategies, ensuring seamless project delivery and high availability.",
+    imgPath: "/images/devops.png", // Replace with DevOps logo/image
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "DevOps & Deployment",
+    date: "March 2020 - May 2021",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Configured CI/CD pipelines for automated testing and deployment.",
+      "Deployed web applications on cloud platforms and optimized performance.",
+      "Monitored and maintained server environments for uptime and reliability.",
     ],
   },
 ];
+
 
 const expLogos = [
   {
@@ -243,6 +275,13 @@ const testimonials = [
     imgPath: "/images/client6.png",
   },
 ];
+const eccomerce = {
+  name: "E-Commerce Platform",
+  description:
+    "A full-featured e-commerce platform built with the MERN stack, featuring user authentication, shopping cart.",
+  imgPath: "/images/sss.png",
+  techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+}
 
 const socialImgs = [
   {
@@ -270,8 +309,17 @@ const socialImgs = [
     link: "https://www.linkedin.com/in/nextgenrahul/"
   },
 ];
-
+const me = {
+  imgPath: "/images/me.png"
+}
+const lms = {
+  imgPath: "/images/lms.jpeg"
+}
 export {
+  lms,
+  me,
+  myImage,
+  eccomerce,
   words,
   abilities,
   logoIconsList,
@@ -279,8 +327,9 @@ export {
   expCards,
   expLogos,
   testimonials,
-  techStackIcons,
+  techStack,
   techStackImgs,
   navLinks,
   socialImgs,
+  resume
 };

@@ -2,7 +2,7 @@ import { useRef, useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
+
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -29,87 +29,84 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      alert("Message sent successfully!"); // optional feedback
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
+      alert("Failed to send message. Please try again."); // optional feedback
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <section
+      id="contact"
+      className="flex justify-center items-center min-h-screen px-5 md:px-10"
+    >
+      <div className="w-full max-w-3xl">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
-              >
-                <div>
-                  <label htmlFor="name">Your name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="What’s your good name?"
-                    required
-                  />
-                </div>
+        <div className="mt-16 flex justify-center">
+          <div className="w-full card-border rounded-xl p-10">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="w-full flex flex-col gap-7"
+            >
+              <div>
+                <label htmlFor="name">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="What’s your good name?"
+                  required
+                />
+              </div>
 
-                <div>
-                  <label htmlFor="email">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="What’s your email address?"
-                    required
-                  />
-                </div>
+              <div>
+                <label htmlFor="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="What’s your email address?"
+                  required
+                />
+              </div>
 
-                <div>
-                  <label htmlFor="message">Your Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    placeholder="How can I help you?"
-                    rows="5"
-                    required
-                  />
-                </div>
+              <div>
+                <label htmlFor="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="How can I help you?"
+                  rows={5}
+                  required
+                />
+              </div>
 
-                <button type="submit">
-                  <div className="cta-button group">
-                    <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
-                    <div className="arrow-wrapper">
-                      <img src="/images/arrow-down.svg" alt="arrow" />
-                    </div>
+              <button type="submit" className="w-full">
+                <div className="cta-button group">
+                  <div className="bg-circle" />
+                  <p className="text">
+                    {loading ? "Sending..." : "Send Message"}
+                  </p>
+                  <div className="arrow-wrapper">
+                    <img src="/images/arrow-down.svg" alt="arrow" />
                   </div>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
+                </div>
+              </button>
+            </form>
           </div>
         </div>
       </div>
