@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,14 +49,29 @@ const AppShowcase = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
+            <Link to="/" className="image-wrapper">
               <img src="/images/sss.png" alt="Ryde App Interface" />
-            </div>
+            </Link>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
+                Shop Smart with a Powerful, User-Friendly E-Commerce App
                 called Ryde
+                <a
+                  href="https://ecommerce-frontend-tau-red.vercel.app/"
+                  target="_blank"
+                  className="text-red-300 hover:underline ml-2"
+                >
+                  Frontend
+                </a>
+                <a
+                  href="https://ecommerce-admin-livid-six.vercel.app/"
+                  target="_blank"
+                  className="text-gray-600 hover:underline ml-2"
+                >
+                  Admin
+                </a>
               </h2>
+
               <p className="text-white-50 md:text-xl">
                 An app built with React Native, Expo, & TailwindCSS for a fast,
                 user-friendly experience.

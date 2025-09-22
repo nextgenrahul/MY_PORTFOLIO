@@ -180,7 +180,7 @@ const expCards = [
   {
     review: "Rahul Shakya delivered high-quality, scalable web applications using the MERN stack. He consistently improved frontend performance and implemented robust backend solutions for real-world projects.",
     imgPath: "/images/mern.png", // Replace with relevant logo/image
-    logoPath: "/images/logo1.png",
+    logoPath: "/images/jsicon.svg",
     title: "Full Stack Developer (MERN)",
     date: "January 2023 - Present",
     responsibilities: [
@@ -192,7 +192,7 @@ const expCards = [
   {
     review: "Rahul Shakya applied backend technologies and database management to create secure, reliable, and performant applications. His expertise in PHP, MySQL, and Node.js ensures robust server-side solutions.",
     imgPath: "/images/backend.png", // Replace with backend logo/image
-    logoPath: "/images/logo2.png",
+    logoPath: "/images/node-js-icon.svg",
     title: "Backend Developer (Node.js & PHP)",
     date: "June 2021 - December 2022",
     responsibilities: [

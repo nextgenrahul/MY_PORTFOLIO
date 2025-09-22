@@ -30,7 +30,7 @@ const Contact = () => {
 
       if (result.status === "success") {
         setForm({ name: "", email: "", message: "" });
-        alert("Message saved to Google Sheet successfully!");
+        alert("Message received! We'll get back to you soon.");
       } else {
         console.error(result.message);
         alert("Failed to save message.");
