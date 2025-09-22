@@ -2,13 +2,19 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import fetch from "node-fetch"; // required if Node <18
+import fetch from "node-fetch";
 
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Configure CORS explicitly
+app.use(cors({
+  origin: "https://my-portfolio-backend-ecru.vercel.app", 
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+}));
+
 app.use(bodyParser.json());
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0ORBeXpONkIk3yRfgiDDiMYtVeWoSWhtnJesiVFqJyRBsgLreYu17bCt_ccZqiTgdng/exec";

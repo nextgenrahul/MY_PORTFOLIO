@@ -56,7 +56,7 @@ const Contact = () => {
 
         <div className="mt-16 flex justify-center w-full">
           <div className="w-full card-border rounded-xl p-10 relative">
-            
+
             {/* Loading Bar with Text */}
             {loading && (
               <div className="absolute top-0 left-0 w-full flex items-center justify-center flex-col">
