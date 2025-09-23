@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,63 +48,70 @@ const AppShowcase = () => {
   }, []);
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="w-full">
-        <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
-            <div  className="image-wrapper">
-              <img effect="blur"
-                src="/images/sss.png"
-                alt="Ryde App Interface" />
-            </div>
-            <div className="text-content">
-              <h2>
-                Shop Smart with a Powerful, User-Friendly E-Commerce App
-                called Ryde
-                <a
-                  href="https://ecommerce-frontend-tau-red.vercel.app/"
-                  target="_blank"
-                  className="text-red-300 hover:underline ml-2"
-                >
-                  Frontend
-                </a>
-                <a
-                  href="https://ecommerce-admin-livid-six.vercel.app/"
-                  target="_blank"
-                  className="text-gray-600 hover:underline ml-2"
-                >
-                  Admin
-                </a>
-              </h2>
+    <>
+      <TitleHeader
+        title="Projects That Make an Impact"
+        sub="🤝 Delivering Scalable, Creative, and Real-World Solutions"
+      />
 
-              <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
-              </p>
-            </div>
-          </div>
-
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+      <div id="work" ref={sectionRef} className="app-showcase mt-[-30px]">
+        <div className="w-full">
+          <div className="showcaselayout">
+            <div ref={rydeRef} className="first-project-wrapper">
+              <div className="image-wrapper">
                 <img effect="blur"
-                  src="/images/lms.jpeg"
-                  alt="Library Management Platform"
-                />
+                  src="/images/sss.png"
+                  alt="Ryde App Interface" />
               </div>
-              <h2>The Library Management Platform</h2>
+              <div className="text-content">
+                <h2>
+                  Shop Smart with a Powerful, User-Friendly E-Commerce App
+                  called Ryde
+                  <a
+                    href="https://ecommerce-frontend-tau-red.vercel.app/"
+                    target="_blank"
+                    className="text-red-300 hover:underline ml-2"
+                  >
+                    Frontend
+                  </a>
+                  <a
+                    href="https://ecommerce-admin-livid-six.vercel.app/"
+                    target="_blank"
+                    className="text-gray-600 hover:underline ml-2"
+                  >
+                    Admin
+                  </a>
+                </h2>
+
+                <p className="text-white-50 md:text-xl">
+                  An app built with React Native, Expo, & TailwindCSS for a fast,
+                  user-friendly experience.
+                </p>
+              </div>
             </div>
 
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img effect="blur" src="/images/project3.png" alt="YC Directory App" />
+            <div className="project-list-wrapper overflow-hidden">
+              <div className="project" ref={libraryRef}>
+                <div className="image-wrapper bg-[#FFEFDB]">
+                  <img effect="blur"
+                    src="/images/lms.jpeg"
+                    alt="Library Management Platform"
+                  />
+                </div>
+                <h2>The Library Management Platform</h2>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+
+              <div className="project" ref={ycDirectoryRef}>
+                <div className="image-wrapper bg-[#FFE7EB]">
+                  <img effect="blur" src="/images/project3.png" alt="YC Directory App" />
+                </div>
+                <h2>YC Directory - A Startup Showcase App</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

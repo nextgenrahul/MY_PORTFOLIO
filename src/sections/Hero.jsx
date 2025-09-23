@@ -75,7 +75,7 @@ const Hero = () => {
            <LazyLoadImage  effect="blur"
             src={me.LazyLoadImagePath}
             alt="Rahul Shakya"
-            className="hidden lg:block w-48 h-48 lg:w-190 lg:h-194 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
+            className=" lg:block w-118 h-88 xm sm:hidden lg:w-190 lg:h-194 xl:w-122 xl:h-122 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
           />
         </div>
 
