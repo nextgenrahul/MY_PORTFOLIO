@@ -20,7 +20,7 @@ const Hero = () => {
     <section id="hero" className="relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute top-0 left-0 z-10">
-         <LazyLoadImage  effect="blur" src="/images/bg.png" alt="" />
+        <LazyLoadImage effect="blur" src="/images/bg.png" alt="" />
       </div>
 
       <div className="hero-layout flex flex-col md:flex-row items-center justify-between md:px-20 px-5">
@@ -36,7 +36,7 @@ const Hero = () => {
                       key={index}
                       className="flex items-center md:gap-3 gap-1 pb-2"
                     >
-                       <LazyLoadImage  effect="blur"
+                      <LazyLoadImage effect="blur"
                         src={word.LazyLoadImagePath}
                         alt="person"
                         className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-none bg-transparent"
@@ -71,13 +71,15 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: Hero Image */}
-        <div className="md:w-1/2 w-full flex justify-end items-center mr-20">
-           <LazyLoadImage  effect="blur"
+        <div className="hidden lg:flex lg:w-1/2 justify-end items-center mr-20">
+          <LazyLoadImage
+            effect="blur"
             src={me.LazyLoadImagePath}
             alt="Rahul Shakya"
-            className=" lg:block w-118 h-88 xm sm:hidden lg:w-190 lg:h-194 xl:w-122 xl:h-122 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
+            className="w-118 h-88 lg:w-190 lg:h-194 xl:w-122 xl:h-122 rounded-4xl object-cover shadow-lg transform transition-transform duration-300 hover:-translate-y-3"
           />
         </div>
+
 
       </div>
 

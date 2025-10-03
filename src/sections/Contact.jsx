@@ -16,18 +16,17 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   }, [form]);
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0ORBeXpONkIk3yRfgiDDiMYtVeWoSWhtnJesiVFqJyRBsgLreYu17bCt_ccZqiTgdng/exec";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const response = await fetch("https://my-portfolio-backend-ecru.vercel.app/submit-contact", {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-
       const result = await response.json();
 
       if (result.status === "success") {
@@ -118,7 +117,7 @@ const Contact = () => {
                     {loading ? "Sending..." : "Send Message"}
                   </p>
                   <div className="arrow-wrapper">
-                     <LazyLoadImage  effect="blur" src="/images/arrow-down.svg" alt="arrow" />
+                    <LazyLoadImage effect="blur" src="/images/arrow-down.svg" alt="arrow" />
                   </div>
                 </div>
               </button>
